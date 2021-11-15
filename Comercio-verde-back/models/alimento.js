@@ -1,6 +1,6 @@
 const { Schema, model } = require('mongoose')
 
-const artesaniaSchema = Schema({
+const alimentoSchema = Schema({
     categoria: {
         type: String,
         required: [true, '**** Db: La categoria es requerida']
@@ -30,10 +30,10 @@ const artesaniaSchema = Schema({
     }
 });
 
-// artesaniaSchema.methods.toJSON = function(){
+// alimentoSchema.methods.toJSON = function(){
 //     const { __v, _id, password, ...user } = this.toObject();
 //     user.userId = _id;
 //     return user;
 // }
 
-module.exports = model('Artesania', artesaniaSchema);
+module.exports = model('Alimento', alimentoSchema);

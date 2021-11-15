@@ -2,13 +2,13 @@ const { Router } = require('express');
 
 const router = Router();
 
-const { 
-        productsGet, 
-        productsPost, 
-        productsGetBySKU, 
-        productsPut, 
-        productsDelete
-    } = require('../controllers/products')
+const {
+    productsGet,
+    productsPost,
+    productsGetBySKU,
+    productsPut,
+    productsDelete
+} = require('../controllers/products')
 
 router.get('/', productsGet);
 
